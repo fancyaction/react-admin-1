@@ -22,7 +22,6 @@ import {
     ReferenceManyField,
     ReferenceInput,
     SelectInput,
-    SelectArrayInput,
     SimpleFormIterator,
     TabbedForm,
     TextField,
@@ -127,7 +126,7 @@ const PostEdit = ({ permissions, ...props }) => (
                     source="tags"
                     filter={{ published: true }}
                 >
-                    <SelectArrayInput variant="outlined" fullWidth />
+                    <AutocompleteArrayInput fullWidth />
                 </ReferenceArrayInput>
                 <ArrayInput source="backlinks">
                     <SimpleFormIterator>
