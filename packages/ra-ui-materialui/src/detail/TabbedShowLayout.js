@@ -105,7 +105,7 @@ const TabbedShowLayout = ({
     const classes = useStyles({ classes: classesOverride, scrollable });
 
     const scrollableProps = scrollable
-        ? { scrollable: true, scrollButtons: 'auto', variant: 'scrollable' }
+        ? { scrollable: true, scrollButtons: 'on', variant: 'scrollable' }
         : {};
     return (
         <div
